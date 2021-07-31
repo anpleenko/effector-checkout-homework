@@ -1,0 +1,16 @@
+:root {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+}
+
+[data-block="notify"] {
+  padding: 1rem;
+  border: 1px solid lightgray;
+}
+
+button,
+input,
+select,
+option {
+  font-size: 15px;
+}
