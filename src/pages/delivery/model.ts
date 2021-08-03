@@ -1,18 +1,11 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { combine, createEffect, createEvent, createStore, guard, sample } from "effector";
-import * as api from "../../api";
 import { $currentBusket } from "../../entities/busket";
-
-type Delivery = "courier" | "postal" | "pickup";
-
-type BusketSubmit = {
-  products: api.Product[];
-  deliveryType: Delivery;
-  address: string;
-};
+import { deliverySubmit, BusketSubmit, Delivery} from "../../entities/busket"
 
 const busketSubmitFx = createEffect<BusketSubmit, void>((busket) => {
   console.info("SUBMITTED", busket);
+  deliverySubmit(busket)
 });
 
 export const pageMounted = createEvent();
