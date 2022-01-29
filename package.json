@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://anpleenko.github.io/effector-checkout-homework",
   "dependencies": {
     "effector": "22.1.2",
     "effector-logger": "0.13.3",
