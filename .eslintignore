@@ -1,0 +1,5 @@
+build/
+.github/
+node_modules/
+.codesandbox/
+public/
