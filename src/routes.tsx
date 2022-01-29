@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { renderRoutes } from 'react-router-config';
-import { BusketPage } from './pages/busket/page';
+import { BasketPage } from './pages/basket/page';
 import { CheckoutPage } from './pages/checkout/page';
 import { DeliveryPage } from './pages/delivery/page';
 import { HomePage } from './pages/home/page';
@@ -12,9 +12,9 @@ const ROUTES = [
     component: HomePage,
   },
   {
-    path: '/busket',
+    path: '/basket',
     exact: true,
-    component: BusketPage,
+    component: BasketPage,
   },
   {
     path: '/delivery',

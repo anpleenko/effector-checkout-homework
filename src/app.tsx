@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Pages } from './routes';
-import './processes/busket-checkout';
+import './processes/basket-checkout';
 import './styles.css';
 import { FC } from 'react';
 

@@ -3,14 +3,14 @@ import { FC, useEffect } from 'react';
 import { useStore } from 'effector-react';
 import * as model from './model';
 import { ProductView } from '../../entities/product';
-import { BusketShortWidget } from '../../entities/busket';
+import { BasketShortWidget } from '../../entities/basket';
 
 export const HomePage: FC = () => {
   useEffect(() => model.pageMounted(), []);
 
   return (
     <section>
-      <BusketShortWidget />
+      <BasketShortWidget />
       <h2>Products</h2>
       <Failure />
       <Loading />

@@ -1,10 +1,10 @@
 import { createEvent, createStore } from 'effector';
-import { $currentBusket } from '../../entities/busket';
+import { $currentBasket } from '../../entities/basket';
 
 export const pageMounted = createEvent();
 export const submitClicked = createEvent();
 
-export const $products = $currentBusket;
+export const $products = $currentBasket;
 export const $productsCount = $products.map((list) => list.length);
 export const $isEmpty = $productsCount.map((count) => count === 0);
 export const $totalPrice = $products
@@ -12,7 +12,7 @@ export const $totalPrice = $products
   .map((price) => price.toFixed(2));
 export const $submitDisabled = $isEmpty;
 
-export const $busketCheckedUp = createStore(false);
+export const $basketCheckedUp = createStore(false);
 
-$busketCheckedUp.on(submitClicked, () => true);
-$busketCheckedUp.reset($products);
+$basketCheckedUp.on(submitClicked, () => true);
+$basketCheckedUp.reset($products);

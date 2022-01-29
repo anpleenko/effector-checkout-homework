@@ -1,16 +1,16 @@
 import { guard } from 'effector';
 import { historyPushFx } from '../entities/navigation';
-import * as busketPage from '../pages/busket/model';
+import * as basketPage from '../pages/basket/model';
 import * as deliveryPage from '../pages/delivery/model';
 
 guard({
-  clock: busketPage.submitClicked,
-  filter: busketPage.$busketCheckedUp,
+  clock: basketPage.submitClicked,
+  filter: basketPage.$basketCheckedUp,
   target: historyPushFx.prepend(() => '/delivery'),
 });
 
 guard({
   clock: deliveryPage.pageMounted,
-  filter: busketPage.$busketCheckedUp.map((checked) => !checked),
+  filter: basketPage.$basketCheckedUp.map((checked) => !checked),
   target: historyPushFx.prepend(() => '/'),
 });

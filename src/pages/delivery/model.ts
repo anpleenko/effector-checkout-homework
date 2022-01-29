@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { combine, createEffect, createEvent, createStore, guard, sample } from 'effector';
 import * as api from '../../api';
-import { $currentBusket } from '../../entities/busket';
+import { $currentBasket } from '../../entities/basket';
 
 type Delivery = 'courier' | 'postal' | 'pickup';
 
-type BusketSubmit = {
+type BasketSubmit = {
   products: api.Product[];
   deliveryType: Delivery;
   address: string;
 };
 
-const busketSubmitFx = createEffect<BusketSubmit, void>((busket) => {
+const basketSubmitFx = createEffect<BasketSubmit, void>((busket) => {
   console.info('SUBMITTED', busket);
 });
 
@@ -83,13 +83,13 @@ const deliverySubmitted = guard({
 
 sample({
   clock: deliverySubmitted,
-  source: [$currentBusket, $deliveryType, $deliveryAddress, $zipCode],
+  source: [$currentBasket, $deliveryType, $deliveryAddress, $zipCode],
   fn: ([products, deliveryType, address, zip]) => ({
     products,
     deliveryType,
     address: `${address}, ${zip}`,
   }),
-  target: busketSubmitFx,
+  target: basketSubmitFx,
 });
 
 const pickupSubmitted = guard({
@@ -99,13 +99,13 @@ const pickupSubmitted = guard({
 
 sample({
   clock: pickupSubmitted,
-  source: [$currentBusket, $deliveryType, $selectedPickupStore],
+  source: [$currentBasket, $deliveryType, $selectedPickupStore],
   fn: ([products, deliveryType, pickupStore]) => ({
     products,
     deliveryType,
     address: pickupStore,
   }),
-  target: busketSubmitFx,
+  target: basketSubmitFx,
 });
 
 // TODO: submit form, but slightly validate before

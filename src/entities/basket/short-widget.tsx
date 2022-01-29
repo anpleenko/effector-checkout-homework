@@ -1,20 +1,20 @@
 import { useStore } from 'effector-react';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { $currentBusket } from './model';
+import { $currentBasket } from './model';
 
-const $countProducts = $currentBusket.map((list) => list.length);
+const $countProducts = $currentBasket.map((list) => list.length);
 
-export const BusketShortWidget: FC = () => {
+export const BasketShortWidget: FC = () => {
   const count = useStore($countProducts);
 
   if (count === 0) return null;
 
   return (
     <div data-block="notify">
-      <span>You have {count} products in busket</span>
+      <span>You have {count} products in basket</span>
       &nbsp;
-      <Link to="/busket">Review</Link>
+      <Link to="/basket">Review</Link>
     </div>
   );
 };

@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 import { ProductView } from '../../entities/product';
 import { $isEmpty, $products, $productsCount, $submitDisabled, $totalPrice, pageMounted, submitClicked } from './model';
 
-export const BusketPage: FC = () => {
+export const BasketPage: FC = () => {
   useEffect(() => pageMounted(), []);
 
   const products = useList($products, (product) => <ProductView product={product} />);
 
   return (
     <section>
-      <h2>Busket</h2>
+      <h2>Basket</h2>
       <Empty />
       {products}
       <Total />
