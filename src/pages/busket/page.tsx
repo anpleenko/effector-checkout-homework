@@ -1,25 +1,15 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
-import { useList, useStore } from "effector-react";
-import { FC, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useList, useStore } from 'effector-react';
+import { FC, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import { ProductView } from "../../entities/product";
-import {
-  $isEmpty,
-  $products,
-  $productsCount,
-  $submitDisabled,
-  $totalPrice,
-  pageMounted,
-  submitClicked
-} from "./model";
+import { ProductView } from '../../entities/product';
+import { $isEmpty, $products, $productsCount, $submitDisabled, $totalPrice, pageMounted, submitClicked } from './model';
 
 export const BusketPage: FC = () => {
   useEffect(() => pageMounted(), []);
 
-  const products = useList($products, (product) => (
-    <ProductView product={product} />
-  ));
+  const products = useList($products, (product) => <ProductView product={product} />);
 
   return (
     <section>
@@ -35,7 +25,7 @@ const Empty: FC = () => {
   const isEmpty = useStore($isEmpty);
   if (isEmpty)
     return (
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: 'center' }}>
         Add products from <Link to="/">home page</Link> to your busket
       </div>
     );

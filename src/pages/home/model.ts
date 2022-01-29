@@ -1,5 +1,5 @@
-import { createStore, createEvent, attach, sample } from "effector";
-import * as api from "../../api";
+import { createStore, createEvent, attach, sample } from 'effector';
+import * as api from '../../api';
 
 const productsListFx = attach({ effect: api.productsListFx });
 
@@ -11,7 +11,7 @@ export const $error = createStore<Error | null>(null);
 
 sample({
   clock: pageMounted,
-  target: productsListFx
+  target: productsListFx,
 });
 
 $products.on(productsListFx.done, (_, { result }) => result);

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
-import { useStore } from "effector-react";
-import { FC, useCallback, useEffect } from "react";
+import { useStore } from 'effector-react';
+import { FC, useCallback, useEffect } from 'react';
 import {
   $availablePickupStores,
   $deliveryAddress,
@@ -16,8 +16,8 @@ import {
   formSubmitted,
   pageMounted,
   pickupStoreChanged,
-  zipCodeChanged
-} from "./model";
+  zipCodeChanged,
+} from './model';
 
 export const DeliveryPage: FC = () => {
   useEffect(() => pageMounted(), []);
@@ -52,10 +52,7 @@ const DeliverySelect: FC = () => {
     <div>
       <label>
         Select delivery type:
-        <select
-          value={value ?? ""}
-          onChange={(event) => deliveryTypeChanged(event.target.value)}
-        >
+        <select value={value ?? ''} onChange={(event) => deliveryTypeChanged(event.target.value)}>
           <option value="courier">Courier</option>
           <option value="postal">Postal</option>
           <option value="pickup">Pickup</option>
@@ -75,10 +72,7 @@ const PickupCentre: FC = () => {
     <div>
       <label>
         Select store to pickup from:
-        <select
-          value={selectedStore}
-          onChange={(event) => pickupStoreChanged(event.target.value)}
-        >
+        <select value={selectedStore} onChange={(event) => pickupStoreChanged(event.target.value)}>
           {availableStores.map((store) => (
             <option key={store} value={store}>
               {store}
@@ -99,10 +93,7 @@ const Address: FC = () => {
     <div>
       <label>
         Enter your full address:
-        <input
-          value={address}
-          onChange={(event) => deliveryAddressChanged(event.target.value)}
-        />
+        <input value={address} onChange={(event) => deliveryAddressChanged(event.target.value)} />
       </label>
     </div>
   );
@@ -117,10 +108,7 @@ const ZipCode: FC = () => {
     <div>
       <label>
         Enter delivery zip code:
-        <input
-          value={zipcode}
-          onChange={(event) => zipCodeChanged(event.target.value)}
-        />
+        <input value={zipcode} onChange={(event) => zipCodeChanged(event.target.value)} />
       </label>
     </div>
   );

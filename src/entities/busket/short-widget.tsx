@@ -1,7 +1,7 @@
-import { useStore } from "effector-react";
-import { FC } from "react";
-import { Link } from "react-router-dom";
-import { $currentBusket } from "./model";
+import { useStore } from 'effector-react';
+import { FC } from 'react';
+import { Link } from 'react-router-dom';
+import { $currentBusket } from './model';
 
 const $countProducts = $currentBusket.map((list) => list.length);
 

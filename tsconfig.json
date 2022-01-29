@@ -2,11 +2,7 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
-    "lib": [
-      "es6",
-      "dom",
-      "ESNext"
-    ],
+    "lib": ["es6", "dom", "ESNext"],
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react-jsx",
@@ -28,7 +24,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

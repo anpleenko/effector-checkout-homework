@@ -1,5 +1,5 @@
-import { createStore, createEvent } from "effector";
-import * as api from "../../api";
+import { createStore, createEvent } from 'effector';
+import * as api from '../../api';
 
 export const busketToggleClicked = createEvent<api.Product>();
 export const $currentBusket = createStore<api.Product[]>([]);

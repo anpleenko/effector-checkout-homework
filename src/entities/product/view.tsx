@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { Product } from "../../api";
-import { AddProductButton } from "../busket";
+import { FC } from 'react';
+import { Product } from '../../api';
+import { AddProductButton } from '../busket';
 
 export const ProductView: FC<{ product: Product }> = ({ product }) => (
   <>

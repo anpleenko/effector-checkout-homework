@@ -1,5 +1,5 @@
-import { createEvent, createStore } from "effector";
-import { $currentBusket } from "../../entities/busket";
+import { createEvent, createStore } from 'effector';
+import { $currentBusket } from '../../entities/busket';
 
 export const pageMounted = createEvent();
 export const submitClicked = createEvent();

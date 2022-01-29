@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
-import { combine, createEffect, createEvent, createStore, guard, sample } from "effector";
-import * as api from "../../api";
-import { $currentBusket } from "../../entities/busket";
+import { combine, createEffect, createEvent, createStore, guard, sample } from 'effector';
+import * as api from '../../api';
+import { $currentBusket } from '../../entities/busket';
 
-type Delivery = "courier" | "postal" | "pickup";
+type Delivery = 'courier' | 'postal' | 'pickup';
 
 type BusketSubmit = {
   products: api.Product[];
@@ -12,7 +12,7 @@ type BusketSubmit = {
 };
 
 const busketSubmitFx = createEffect<BusketSubmit, void>((busket) => {
-  console.info("SUBMITTED", busket);
+  console.info('SUBMITTED', busket);
 });
 
 export const pageMounted = createEvent();
@@ -22,17 +22,17 @@ export const pickupStoreChanged = createEvent<string>();
 export const deliveryAddressChanged = createEvent<string>();
 export const zipCodeChanged = createEvent<string>();
 
-export const $deliveryType = createStore<Delivery>("courier");
+export const $deliveryType = createStore<Delivery>('courier');
 
-export const $isPickup = $deliveryType.map((delivery) => delivery === "pickup");
-export const $availablePickupStores = createStore(["warehouse A", "warehouse B"]);
-export const $selectedPickupStore = createStore("warehouse A");
+export const $isPickup = $deliveryType.map((delivery) => delivery === 'pickup');
+export const $availablePickupStores = createStore(['warehouse A', 'warehouse B']);
+export const $selectedPickupStore = createStore('warehouse A');
 
-export const $deliveryAddress = createStore("");
+export const $deliveryAddress = createStore('');
 export const $isDeliveryEmpty = $deliveryAddress.map((address) => address.trim().length === 0);
 export const $requireAddress = $isPickup.map((isPickup) => !isPickup);
 
-export const $zipCode = createStore("");
+export const $zipCode = createStore('');
 export const $requireZipCode = $isPickup.map((isPickup) => !isPickup);
 
 const $isAddressValid = $deliveryAddress.map(isValidAddress);
@@ -52,11 +52,11 @@ const $isFormValid = combine(
     pickup: $isPickupValid,
   },
   ({ type, courier, postal, pickup }) => {
-    if (type === "courier") return courier;
-    if (type === "postal") return postal;
-    if (type === "pickup") return pickup;
+    if (type === 'courier') return courier;
+    if (type === 'postal') return postal;
+    if (type === 'pickup') return pickup;
     return false;
-  }
+  },
 );
 
 export const $submitDisabled = $isFormValid.map((isValid) => !isValid);
@@ -78,7 +78,7 @@ const validFormSubmitted = guard({
 
 const deliverySubmitted = guard({
   clock: validFormSubmitted,
-  filter: $deliveryType.map((type) => type === "courier" || type === "postal"),
+  filter: $deliveryType.map((type) => type === 'courier' || type === 'postal'),
 });
 
 sample({
@@ -94,7 +94,7 @@ sample({
 
 const pickupSubmitted = guard({
   clock: formSubmitted,
-  filter: $deliveryType.map((type) => type === "pickup"),
+  filter: $deliveryType.map((type) => type === 'pickup'),
 });
 
 sample({
@@ -110,12 +110,12 @@ sample({
 
 // TODO: submit form, but slightly validate before
 
-const validDelivery = ["courier", "postal", "pickup"];
+const validDelivery = ['courier', 'postal', 'pickup'];
 function validateDeliveryType(input: string): Delivery {
   if (validDelivery.includes(input)) {
     return input as Delivery;
   }
-  return "postal";
+  return 'postal';
 }
 
 function isValidZipCode(input: string): boolean {
