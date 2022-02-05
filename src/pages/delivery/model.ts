@@ -11,8 +11,8 @@ type BasketSubmit = {
   address: string;
 };
 
-const basketSubmitFx = createEffect<BasketSubmit, void>((busket) => {
-  console.info('SUBMITTED', busket);
+const basketSubmitFx = createEffect<BasketSubmit, void>((basket) => {
+  console.info('SUBMITTED', basket);
 });
 
 export const pageMounted = createEvent();
@@ -38,7 +38,7 @@ export const $requireZipCode = $isPickup.map((isPickup) => !isPickup);
 const $isAddressValid = $deliveryAddress.map(isValidAddress);
 const $isZipCodeValid = $zipCode.map(isValidZipCode);
 
-const $isCouirerValid = combine($isAddressValid, $isZipCodeValid, (isAddress, isZip) => isAddress && isZip);
+const $isCourierValid = combine($isAddressValid, $isZipCodeValid, (isAddress, isZip) => isAddress && isZip);
 
 const $isPostalValid = combine($isAddressValid, $isZipCodeValid, (isAddress, isZip) => isAddress && isZip);
 
@@ -47,7 +47,7 @@ const $isPickupValid = createStore(true);
 const $isFormValid = combine(
   {
     type: $deliveryType,
-    courier: $isCouirerValid,
+    courier: $isCourierValid,
     postal: $isPostalValid,
     pickup: $isPickupValid,
   },

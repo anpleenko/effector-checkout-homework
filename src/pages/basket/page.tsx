@@ -26,7 +26,7 @@ const Empty: FC = () => {
   if (isEmpty)
     return (
       <div style={{ textAlign: 'center' }}>
-        Add products from <Link to="/">home page</Link> to your busket
+        Add products from <Link to="/">home page</Link> to your basket
       </div>
     );
 
@@ -44,7 +44,7 @@ const Total: FC = () => {
   return (
     <div data-block="notify">
       <div>
-        The subtotal price of {count} products in busket: <small>$</small>
+        The subtotal price of {count} products in basket: <small>$</small>
         <b>{price}</b>
       </div>
       <button type="button" disabled={disabled} onClick={() => submitClicked()}>
