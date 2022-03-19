@@ -7,7 +7,7 @@
   "homepage": "https://anpleenko.github.io/effector-checkout-homework",
   "scripts": {
     "build": "vite build",
-    "ci": "pnpm lint && pnpm tsc",
+    "ci": "yarn lint && yarn tsc",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --cache .",
     "preview": "vite preview",
