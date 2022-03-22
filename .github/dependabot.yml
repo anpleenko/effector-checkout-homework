@@ -13,3 +13,5 @@ updates:
       - dependency-name: "faker"
       - dependency-name: "@types/faker"
       - dependency-name: "history"
+      - dependency-name: "react-router"
+      - dependency-name: "react-router-dom"
