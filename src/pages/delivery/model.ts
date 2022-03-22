@@ -83,12 +83,8 @@ const deliverySubmitted = guard({
 
 sample({
   clock: deliverySubmitted,
-  source: [$currentBasket, $deliveryType, $deliveryAddress, $zipCode],
-  fn: ([products, deliveryType, address, zip]) => ({
-    products,
-    deliveryType,
-    address: `${address}, ${zip}`,
-  }),
+  source: combine({ products: $currentBasket, deliveryType: $deliveryType, address: $deliveryAddress, zip: $zipCode }),
+  fn: ({ products, deliveryType, address, zip }) => ({ products, deliveryType, address: `${address}, ${zip}` }),
   target: basketSubmitFx,
 });
 
@@ -99,12 +95,8 @@ const pickupSubmitted = guard({
 
 sample({
   clock: pickupSubmitted,
-  source: [$currentBasket, $deliveryType, $selectedPickupStore],
-  fn: ([products, deliveryType, pickupStore]) => ({
-    products,
-    deliveryType,
-    address: pickupStore,
-  }),
+  source: combine({ products: $currentBasket, deliveryType: $deliveryType, pickupStore: $selectedPickupStore }),
+  fn: ({ products, deliveryType, pickupStore }) => ({ products, deliveryType, address: pickupStore }),
   target: basketSubmitFx,
 });
 
