@@ -18,7 +18,7 @@
     "effector": "22.1.2",
     "effector-logger": "0.13.4",
     "effector-react": "22.0.6",
-    "faker": "5.5.3",
+    "faker": "6.6.6",
     "history": "4.10.1",
     "nanoid": "3.3.1",
     "patronum": "1.8.2",
