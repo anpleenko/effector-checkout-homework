@@ -16,3 +16,5 @@ updates:
       - dependency-name: "history"
       - dependency-name: "react-router"
       - dependency-name: "react-router-dom"
+    labels:
+      - "dependencies"
