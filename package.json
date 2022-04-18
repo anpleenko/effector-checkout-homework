@@ -15,7 +15,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "effector": "22.2.0",
+    "effector": "22.3.0",
     "effector-logger": "0.13.4",
     "effector-react": "22.0.6",
     "faker": "5.5.3",
