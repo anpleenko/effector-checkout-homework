@@ -1591,10 +1591,10 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-patronum@1.8.5:
-  version "1.8.5"
-  resolved "https://registry.yarnpkg.com/patronum/-/patronum-1.8.5.tgz#364f6a1e35e8f39daa4b10ede8cd2adde5e3862b"
-  integrity sha512-XI38LyqbzAn+S+1dFNNmxGeTPM+0UAxyqWnFEedjYPcveopMmir3vmShgatOUxP3NcnUk1oo6YdJxt6MS118XQ==
+patronum@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/patronum/-/patronum-1.9.0.tgz#d30ad231b708a675e66237b94bbd117e76cc1803"
+  integrity sha512-+uaVUFiHCkIvCf7CfM2+bUkqfVcYGdQjgRsbj/+fcw0J5QSdJREMqLfr8ALRkS5DMw1F7B2EJStFZ5xx7Ubv3g==
 
 picocolors@^1.0.0:
   version "1.0.0"
