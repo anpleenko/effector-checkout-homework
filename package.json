@@ -17,7 +17,7 @@
   "dependencies": {
     "effector": "22.3.0",
     "effector-logger": "0.13.4",
-    "effector-react": "22.0.6",
+    "effector-react": "22.2.0",
     "faker": "5.5.3",
     "history": "4.10.1",
     "nanoid": "3.3.4",
