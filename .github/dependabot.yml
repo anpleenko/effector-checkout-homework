@@ -5,16 +5,14 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/' # Location of package manifests
     open-pull-requests-limit: 100
     schedule:
-      interval: "daily"
+      interval: 'daily'
     ignore:
-      - dependency-name: "faker"
-      - dependency-name: "@types/faker"
-      - dependency-name: "history"
-      - dependency-name: "react-router"
-      - dependency-name: "react-router-dom"
+      - dependency-name: 'history'
+      - dependency-name: 'react-router'
+      - dependency-name: 'react-router-dom'
     labels:
-      - "dependencies"
+      - 'dependencies'
