@@ -1,5 +1,5 @@
+import { faker } from '@faker-js/faker';
 import { createEffect } from 'effector';
-import faker from 'faker';
 
 function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -18,7 +18,7 @@ const products: Product[] = Array.from({ length: 20 }, () => ({
   title: faker.commerce.productName(),
   description: faker.commerce.productDescription(),
   price: faker.commerce.price(1, 60, 2),
-  color: faker.commerce.color(),
+  color: faker.color.human(),
 }));
 
 export const productsListFx = createEffect<void, Product[]>(async () => {
