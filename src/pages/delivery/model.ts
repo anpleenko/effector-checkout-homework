@@ -1,15 +1,15 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
 import { combine, createEffect, createEvent, createStore, guard, sample } from 'effector';
+
 import * as api from '../../api';
 import { $currentBasket } from '../../entities/basket';
 
 type Delivery = 'courier' | 'postal' | 'pickup';
 
-type BasketSubmit = {
+interface BasketSubmit {
   products: api.Product[];
   deliveryType: Delivery;
   address: string;
-};
+}
 
 const basketSubmitFx = createEffect<BasketSubmit, void>((basket) => {
   console.info('SUBMITTED', basket);
@@ -54,6 +54,7 @@ const $isFormValid = combine(
   ({ type, courier, postal, pickup }) => {
     if (type === 'courier') return courier;
     if (type === 'postal') return postal;
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     if (type === 'pickup') return pickup;
     return false;
   },

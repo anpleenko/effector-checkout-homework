@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { renderRoutes } from 'react-router-config';
+
 import { BasketPage } from './pages/basket/page';
 import { CheckoutPage } from './pages/checkout/page';
 import { DeliveryPage } from './pages/delivery/page';

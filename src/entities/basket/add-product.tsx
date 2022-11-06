@@ -1,6 +1,8 @@
-import { useStoreMap } from 'effector-react';
 import { FC } from 'react';
+import { useStoreMap } from 'effector-react';
+
 import { Product } from '../../api';
+
 import { $currentBasket, basketToggleClicked } from './model';
 
 export const AddProductButton: FC<{ product: Product }> = ({ product }) => {

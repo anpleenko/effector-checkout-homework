@@ -1,5 +1,5 @@
-import { createBrowserHistory } from 'history';
 import { createEffect } from 'effector';
+import { createBrowserHistory } from 'history';
 
 export const history = createBrowserHistory();
 

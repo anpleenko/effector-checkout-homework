@@ -1,4 +1,5 @@
 import { createEvent, createStore } from 'effector';
+
 import { $currentBasket } from '../../entities/basket';
 
 export const pageMounted = createEvent();

@@ -1,4 +1,5 @@
-import { createStore, createEvent, attach, sample } from 'effector';
+import { attach, createEvent, createStore, sample } from 'effector';
+
 import * as api from '../../api';
 
 const productsListFx = attach({ effect: api.productsListFx });
