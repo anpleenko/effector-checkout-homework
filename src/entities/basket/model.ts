@@ -1,4 +1,5 @@
-import { createStore, createEvent } from 'effector';
+import { createEvent, createStore } from 'effector';
+
 import * as api from '../../api';
 
 export const basketToggleClicked = createEvent<api.Product>();

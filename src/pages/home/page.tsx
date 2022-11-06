@@ -1,9 +1,10 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
 import { FC, useEffect } from 'react';
 import { useStore } from 'effector-react';
-import * as model from './model';
-import { ProductView } from '../../entities/product';
+
 import { BasketShortWidget } from '../../entities/basket';
+import { ProductView } from '../../entities/product';
+
+import * as model from './model';
 
 export const HomePage: FC = () => {
   useEffect(() => model.pageMounted(), []);

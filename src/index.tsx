@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
 
-import { App } from './app';
 import { history } from './entities/navigation';
+import { App } from './app';
 
-const rootElement = document.getElementById('root');
+const rootElement = document.querySelector('#root');
 ReactDOM.render(
   <Router history={history}>
     <App />

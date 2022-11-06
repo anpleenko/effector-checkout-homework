@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
+import { FC, FormEvent, useCallback, useEffect } from 'react';
 import { useStore } from 'effector-react';
-import { FC, useCallback, useEffect } from 'react';
+
 import {
   $availablePickupStores,
   $deliveryAddress,
@@ -22,7 +22,7 @@ import {
 export const DeliveryPage: FC = () => {
   useEffect(() => pageMounted(), []);
   const submitDisabled = useStore($submitDisabled);
-  const handleSubmit = useCallback((event) => {
+  const handleSubmit = useCallback((event: FormEvent) => {
     event.preventDefault();
     formSubmitted();
   }, []);
@@ -52,7 +52,7 @@ const DeliverySelect: FC = () => {
     <div>
       <label>
         Select delivery type:
-        <select value={value ?? ''} onChange={(event) => deliveryTypeChanged(event.target.value)}>
+        <select value={value} onChange={(event) => deliveryTypeChanged(event.target.value)}>
           <option value="courier">Courier</option>
           <option value="postal">Postal</option>
           <option value="pickup">Pickup</option>
