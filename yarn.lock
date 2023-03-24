@@ -1571,7 +1571,7 @@ __metadata:
     "@types/react-router-config": 5.0.6
     "@types/react-router-dom": 5.3.3
     "@vitejs/plugin-react": 3.0.1
-    effector: 22.5.0
+    effector: 22.7.0
     effector-react: 22.4.0
     eslint: 8.36.0
     eslint-kit: 6.11.0
@@ -1820,10 +1820,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"effector@npm:22.5.0":
-  version: 22.5.0
-  resolution: "effector@npm:22.5.0"
-  checksum: d89d6005e38a49826023298849a8838ae7c753627ba729fec0c21ddef4ba90ec682b0401ea7b7c51ee00eb6ea00c2c0bf21c162a1eb840bc775c10797f6ed534
+"effector@npm:22.7.0":
+  version: 22.7.0
+  resolution: "effector@npm:22.7.0"
+  checksum: 9a3f9e5079ca5aab04c0709b8a608dc5752b8d88f9386d22bcc47cc0abbaf5842428035ce22af4626a5c4ae117e2a59533a7fde6154ea123df5021f75e4b2f4a
   languageName: node
   linkType: hard
 
