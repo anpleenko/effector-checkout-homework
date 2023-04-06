@@ -956,14 +956,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-config@npm:5.0.6":
-  version: 5.0.6
-  resolution: "@types/react-router-config@npm:5.0.6"
+"@types/react-router-config@npm:5.0.7":
+  version: 5.0.7
+  resolution: "@types/react-router-config@npm:5.0.7"
   dependencies:
     "@types/history": ^4.7.11
     "@types/react": "*"
-    "@types/react-router": "*"
-  checksum: e32a7b19d14c1c07e2c06630207bc4ecf86a01585b832bf3c0756c9eaca312b5839bc8d50e8d744738ea50e7bbde0be3b1fd14a6a9398159d36bce33aff7f280
+    "@types/react-router": ^5.1.0
+  checksum: e7ecc3fc957a41a22d64c53529e801c434d8b3fb80d0b98e9fc614b2d34ede1b89ec32bbaf68ead8ec7e573a485ac6a5476142e6e659bbee0697599f206070a7
   languageName: node
   linkType: hard
 
@@ -985,6 +985,16 @@ __metadata:
     "@types/history": ^4.7.11
     "@types/react": "*"
   checksum: 3536c3dec7af1f12fed2bea246eb143bd893ee66d4e58c1d3fe734cbd67d8a0aedac0bba9255c58fc69dbd32ae17ad280d6866916aee32653a705178e4a544dc
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:^5.1.0":
+  version: 5.1.20
+  resolution: "@types/react-router@npm:5.1.20"
+  dependencies:
+    "@types/history": ^4.7.11
+    "@types/react": "*"
+  checksum: 128764143473a5e9457ddc715436b5d49814b1c214dde48939b9bef23f0e77f52ffcdfa97eb8d3cc27e2c229869c0cdd90f637d887b62f2c9f065a87d6425419
   languageName: node
   linkType: hard
 
@@ -1568,7 +1578,7 @@ __metadata:
     "@faker-js/faker": 7.6.0
     "@types/react": 18.0.25
     "@types/react-dom": 18.0.10
-    "@types/react-router-config": 5.0.6
+    "@types/react-router-config": 5.0.7
     "@types/react-router-dom": 5.3.3
     "@vitejs/plugin-react": 3.0.1
     effector: 22.5.0
