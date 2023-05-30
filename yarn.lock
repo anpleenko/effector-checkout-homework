@@ -1727,7 +1727,7 @@ __metadata:
     "@types/react-router-dom": 5.3.3
     "@vitejs/plugin-react": 3.0.1
     effector: 22.8.6
-    effector-react: 22.4.0
+    effector-react: 22.5.3
     eslint: 8.41.0
     eslint-kit: 9.0.9
     history: 4.10.1
@@ -2012,15 +2012,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"effector-react@npm:22.4.0":
-  version: 22.4.0
-  resolution: "effector-react@npm:22.4.0"
+"effector-react@npm:22.5.3":
+  version: 22.5.3
+  resolution: "effector-react@npm:22.5.3"
   dependencies:
     use-sync-external-store: ^1.0.0
   peerDependencies:
     effector: ^22.0.2
     react: ">=16.8.0 <19.0.0"
-  checksum: b0f6ff5e037ecefaeb6e0aa2c336693d5aca41f20baedd493045aa5717f5e0bb65994d5a4e0ea3a3712e4387a424b3cb579fdb5fe8b5456a4d3bbcbbe550f50a
+  checksum: 4f1df24b697fa6cb3127757db4f9a1b987b4915cae230eba630847f1f1f94fed17b066d0f1efdb32290a7e1d08864b838481d9b5c3930139fb13b3b40d3acad1
   languageName: node
   linkType: hard
 
