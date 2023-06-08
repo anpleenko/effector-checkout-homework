@@ -1,6 +1,7 @@
 import { createEvent, createStore } from 'effector';
 
 import { $currentBasket } from '../../entities/basket';
+import { quickBasketToggleClicked } from '../home/model';
 
 export const pageMounted = createEvent();
 export const submitClicked = createEvent();
@@ -17,3 +18,5 @@ export const $basketCheckedUp = createStore(false);
 
 $basketCheckedUp.on(submitClicked, () => true);
 $basketCheckedUp.reset($products);
+
+$basketCheckedUp.on(quickBasketToggleClicked, () => true);

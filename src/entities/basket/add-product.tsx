@@ -1,7 +1,9 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { useStoreMap } from 'effector-react';
 
 import { Product } from '../../api';
+import { quickBasketToggleClicked } from '../../pages/home/model';
 
 import { $currentBasket, basketToggleClicked } from './model';
 
@@ -19,7 +21,13 @@ export const AddProductButton: FC<{ product: Product }> = ({ product }) => {
       <button type="button" onClick={() => basketToggleClicked(product)}>
         {text}
       </button>
-      {/* TODO: {!hasInBasket && <button type="button">Buy now!</button>} */}
+      {!hasInBasket && (
+        <Link to="/delivery">
+          <button type="button" onClick={() => quickBasketToggleClicked(product)}>
+            Buy now!
+          </button>
+        </Link>
+      )}
     </>
   );
 };

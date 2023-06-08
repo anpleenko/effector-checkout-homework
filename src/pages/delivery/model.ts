@@ -2,6 +2,7 @@ import { combine, createEffect, createEvent, createStore, guard, sample } from '
 
 import * as api from '../../api';
 import { $currentBasket } from '../../entities/basket';
+import { $quickBasket, quickBasketToggleClicked } from '../home/model';
 
 type Delivery = 'courier' | 'postal' | 'pickup';
 
@@ -97,6 +98,13 @@ const pickupSubmitted = guard({
 sample({
   clock: pickupSubmitted,
   source: combine({ products: $currentBasket, deliveryType: $deliveryType, pickupStore: $selectedPickupStore }),
+  fn: ({ products, deliveryType, pickupStore }) => ({ products, deliveryType, address: pickupStore }),
+  target: basketSubmitFx,
+});
+
+sample({
+  clock: quickBasketToggleClicked,
+  source: combine({ products: $quickBasket, deliveryType: $deliveryType, pickupStore: $selectedPickupStore }),
   fn: ({ products, deliveryType, pickupStore }) => ({ products, deliveryType, address: pickupStore }),
   target: basketSubmitFx,
 });
