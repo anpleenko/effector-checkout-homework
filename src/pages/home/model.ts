@@ -1,7 +1,7 @@
 import { attach, createEvent, createStore, sample } from 'effector';
 
 import * as api from '../../api';
-import { $currentBasket } from '../../entities/basket';
+import { $basket } from '../../entities/basket';
 import { historyPushFx } from '../../entities/navigation';
 
 const productsListFx = attach({ effect: api.productsListFx });

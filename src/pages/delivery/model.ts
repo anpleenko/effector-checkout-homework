@@ -1,10 +1,11 @@
 import { combine, createEffect, createEvent, createStore, guard, sample } from 'effector';
 
 import * as api from '../../api';
-import { $currentBasket } from '../../entities/basket';
+import { $basket } from '../../entities/basket';
 import { $quickBasket, quickBasketToggleClicked } from '../home/model';
 
 type Delivery = 'courier' | 'postal' | 'pickup';
+type Basket = 'basket' | 'quickBasket';
 
 interface BasketSubmit {
   products: api.Product[];
@@ -24,6 +25,7 @@ export const deliveryAddressChanged = createEvent<string>();
 export const zipCodeChanged = createEvent<string>();
 
 export const $deliveryType = createStore<Delivery>('courier');
+export const $basketType = createStore<Basket>('basket');
 
 export const $isPickup = $deliveryType.map((delivery) => delivery === 'pickup');
 export const $availablePickupStores = createStore(['warehouse A', 'warehouse B']);
@@ -60,6 +62,20 @@ const $isFormValid = combine(
     return false;
   },
 );
+
+export const $currentBasket = combine(
+  {
+    type: $basketType,
+    basket: $basket,
+    quickBasket: $quickBasket,
+  },
+  ({ type, basket, quickBasket }) => {
+    if (type === 'quickBasket') return basket.concat(quickBasket);
+    return basket;
+  },
+);
+
+$basketType.on($quickBasket, (_quickBasket) => 'quickBasket');
 
 export const $submitDisabled = $isFormValid.map((isValid) => !isValid);
 

@@ -1,12 +1,12 @@
 import { createEvent, createStore } from 'effector';
 
-import { $currentBasket } from '../../entities/basket';
+import { $basket } from '../../entities/basket';
 import { quickBasketToggleClicked } from '../home/model';
 
 export const pageMounted = createEvent();
 export const submitClicked = createEvent();
 
-export const $products = $currentBasket;
+export const $products = $basket;
 export const $productsCount = $products.map((list) => list.length);
 export const $isEmpty = $productsCount.map((count) => count === 0);
 export const $totalPrice = $products

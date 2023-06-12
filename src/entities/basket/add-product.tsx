@@ -5,13 +5,13 @@ import { useStoreMap } from 'effector-react';
 import { Product } from '../../api';
 import { quickBasketToggleClicked } from '../../pages/home/model';
 
-import { $currentBasket, basketToggleClicked } from './model';
+import { $basket, basketToggleClicked } from './model';
 
 export const AddProductButton: FC<{ product: Product }> = ({ product }) => {
   const hasInBasket = useStoreMap({
-    store: $currentBasket,
+    store: $basket,
     keys: [product.id],
-    fn: (basketProducts, [productId]) => basketProducts.some((exist) => exist.id === productId),
+    fn: (currentBaskets, [productId]) => currentBaskets.some((exist) => exist.id === productId),
   });
 
   const text = hasInBasket ? 'Remove from basket' : 'Add to basket';
@@ -22,11 +22,9 @@ export const AddProductButton: FC<{ product: Product }> = ({ product }) => {
         {text}
       </button>
       {!hasInBasket && (
-        <Link to="/delivery">
-          <button type="button" onClick={() => quickBasketToggleClicked(product)}>
-            Buy now!
-          </button>
-        </Link>
+        <button type="button" onClick={() => quickBasketToggleClicked(product)}>
+          Buy now!
+        </button>
       )}
     </>
   );
