@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 import { useStoreMap } from 'effector-react';
 
 import { Product } from '../../api';
