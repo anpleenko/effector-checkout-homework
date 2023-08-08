@@ -31,7 +31,7 @@
     "@types/react-router-config": "5.0.7",
     "@types/react-router-dom": "5.3.3",
     "@vitejs/plugin-react": "4.0.3",
-    "eslint": "8.45.0",
+    "eslint": "8.46.0",
     "eslint-kit": "10.4.0",
     "prettier": "3.0.0",
     "typescript": "5.1.6",
