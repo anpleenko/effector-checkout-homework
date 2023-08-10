@@ -1236,7 +1236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.25":
+"@types/react@npm:*":
   version: 18.0.25
   resolution: "@types/react@npm:18.0.25"
   dependencies:
@@ -1244,6 +1244,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 231d658c45abdef044a716b4502774f1585d8336d73b2f5bd68f181acbfc874b7a457686ecd29b415b43ed0922c309bab7e2cf96832d188a3f4f1b02f2af760a
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.2.20":
+  version: 18.2.20
+  resolution: "@types/react@npm:18.2.20"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 30f699c60e5e4bfef273ce64d320651cdd60f5c6a08361c6c7eca8cebcccda1ac953d2ee57c9f321b5ae87f8a62c72b6d35ca42df0e261d337849952daab2141
   languageName: node
   linkType: hard
 
@@ -1914,7 +1925,7 @@ __metadata:
   resolution: "checkout@workspace:."
   dependencies:
     "@faker-js/faker": 8.0.2
-    "@types/react": 18.0.25
+    "@types/react": 18.2.20
     "@types/react-dom": 18.2.7
     "@types/react-router-config": 5.0.7
     "@types/react-router-dom": 5.3.3
