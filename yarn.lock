@@ -1922,7 +1922,7 @@ __metadata:
     effector: 22.8.6
     effector-react: 22.5.3
     eslint: 8.49.0
-    eslint-kit: 10.4.0
+    eslint-kit: 10.5.0
     history: 4.10.1
     prettier: 3.0.1
     react: 18.2.0
@@ -2514,9 +2514,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-kit@npm:10.4.0":
-  version: 10.4.0
-  resolution: "eslint-kit@npm:10.4.0"
+"eslint-kit@npm:10.5.0":
+  version: 10.5.0
+  resolution: "eslint-kit@npm:10.5.0"
   dependencies:
     "@babel/core": ^7.18.6
     "@babel/eslint-parser": ^7.17.0
@@ -2528,7 +2528,7 @@ __metadata:
     eslint-import-resolver-custom-alias: ^1.3.0
     eslint-import-resolver-jsconfig: ^1.1.0
     eslint-import-resolver-typescript: ^3.5.5
-    eslint-plugin-effector: 0.10.5
+    eslint-plugin-effector: 0.11.0
     eslint-plugin-import: 2.27.5
     eslint-plugin-jsx-a11y: 6.7.1
     eslint-plugin-prettier: 5.0.0
@@ -2545,7 +2545,7 @@ __metadata:
   peerDependencies:
     eslint: ^8.41.0
     prettier: ^3.0.0
-  checksum: c3db6b92ff405c532d079324dcb64f685f138474da26de4c8494ba9c5c90c891367c9a9c62060757878cb5dcce8fe7e3bf7de320d7b33a8af8580e43c18524ad
+  checksum: cb9f078c9f6cfb7a0916d558b3e7df713a7f921af8ca9bb1cdb85f399bccaf3649e84e83e406ed1a93bfc32c30e3f52e58bc6a32d818580f0e7d4fb23012dd6f
   languageName: node
   linkType: hard
 
@@ -2561,15 +2561,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-effector@npm:0.10.5":
-  version: 0.10.5
-  resolution: "eslint-plugin-effector@npm:0.10.5"
+"eslint-plugin-effector@npm:0.11.0":
+  version: 0.11.0
+  resolution: "eslint-plugin-effector@npm:0.11.0"
   dependencies:
     prettier: ^2.3.2
   peerDependencies:
     effector: "*"
     eslint: 7 || 8
-  checksum: 2cb42e409ef3454fa31781944fabc871288891d54ac0d24f176758b7a3fec3786fc227c5095b6f8de688ec2a329ea68a3d632aa7c4f6c53e16aa9b57c221df1a
+  checksum: a374209055013d920018895cb68411a5344ddca7bc36c9b546aa47b2a600b95d7aaf2614e789860a573d7c0e96d7db2c0b4a74863a1c6e3ca8070404979ad4cf
   languageName: node
   linkType: hard
 
