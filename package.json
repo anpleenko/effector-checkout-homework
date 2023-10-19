@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/react": "18.0.25",
-    "@types/react-dom": "18.2.13",
+    "@types/react-dom": "18.2.14",
     "@types/react-router-config": "5.0.8",
     "@types/react-router-dom": "5.3.3",
     "@vitejs/plugin-react": "4.1.0",
