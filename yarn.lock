@@ -1213,14 +1213,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-config@npm:5.0.8":
-  version: 5.0.8
-  resolution: "@types/react-router-config@npm:5.0.8"
+"@types/react-router-config@npm:5.0.9":
+  version: 5.0.9
+  resolution: "@types/react-router-config@npm:5.0.9"
   dependencies:
     "@types/history": ^4.7.11
     "@types/react": "*"
     "@types/react-router": ^5.1.0
-  checksum: afbd96e526fcdd19a3c8604912496a5a7ecfdcd848632a003ef8af69701ca74f14451e4fac93d265b678ca07c82ec4a103126f64c040a4aefa1a8172619be2bd
+  checksum: 082f3878d7af0be53033ab011bee84962ccc7be8dbc6e20f315f1e27639423f13e4dc4b623ac90c3dfb1eab6ecf7b79351ba2486519ddf2ee7448b033488cc86
   languageName: node
   linkType: hard
 
@@ -1943,7 +1943,7 @@ __metadata:
     "@faker-js/faker": 8.2.0
     "@types/react": 18.0.25
     "@types/react-dom": 18.2.14
-    "@types/react-router-config": 5.0.8
+    "@types/react-router-config": 5.0.9
     "@types/react-router-dom": 5.3.3
     "@vitejs/plugin-react": 4.1.0
     effector: 22.8.7
