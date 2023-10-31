@@ -1949,7 +1949,7 @@ __metadata:
     effector: 22.8.7
     effector-react: 22.5.4
     eslint: 8.52.0
-    eslint-kit: 10.5.2
+    eslint-kit: 10.6.0
     history: 4.10.1
     prettier: 3.0.3
     react: 18.2.0
@@ -2548,9 +2548,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-kit@npm:10.5.2":
-  version: 10.5.2
-  resolution: "eslint-kit@npm:10.5.2"
+"eslint-kit@npm:10.6.0":
+  version: 10.6.0
+  resolution: "eslint-kit@npm:10.6.0"
   dependencies:
     "@babel/core": ^7.18.6
     "@babel/eslint-parser": ^7.17.0
@@ -2572,14 +2572,14 @@ __metadata:
     eslint-plugin-solid: 0.12.1
     eslint-plugin-sonarjs: 0.19.0
     eslint-plugin-svelte3: ^4.0.0
-    eslint-plugin-unicorn: 48.0.1
+    eslint-plugin-unicorn: 49.0.0
     eslint-plugin-vue: 9.15.1
     semver: ^7.3.8
     vue-eslint-parser: 9.1.1
   peerDependencies:
     eslint: ^8.41.0
     prettier: ^3.0.0
-  checksum: 5941a68db214349d8d655a31573258c7a9830d79a004e98a609340ae7f52fbc941a570a82e390695e2683ce6693b47891051fdaf8328333adb2983374f609b97
+  checksum: 738d00c537b7b41e1fefa2893a49d95f118982c7bbd5d6b5ec5052093f8c5282a5c2bf094c8417b3d938394049fc1d4ca2fe7ae20b8c5b1918ace7ae0ce379dd
   languageName: node
   linkType: hard
 
@@ -2755,11 +2755,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:48.0.1":
-  version: 48.0.1
-  resolution: "eslint-plugin-unicorn@npm:48.0.1"
+"eslint-plugin-unicorn@npm:49.0.0":
+  version: 49.0.0
+  resolution: "eslint-plugin-unicorn@npm:49.0.0"
   dependencies:
-    "@babel/helper-validator-identifier": ^7.22.5
+    "@babel/helper-validator-identifier": ^7.22.20
     "@eslint-community/eslint-utils": ^4.4.0
     ci-info: ^3.8.0
     clean-regexp: ^1.0.0
@@ -2767,7 +2767,6 @@ __metadata:
     indent-string: ^4.0.0
     is-builtin-module: ^3.2.1
     jsesc: ^3.0.2
-    lodash: ^4.17.21
     pluralize: ^8.0.0
     read-pkg-up: ^7.0.1
     regexp-tree: ^0.1.27
@@ -2775,8 +2774,8 @@ __metadata:
     semver: ^7.5.4
     strip-indent: ^3.0.0
   peerDependencies:
-    eslint: ">=8.44.0"
-  checksum: e63112cbaa3a1347cbb427160d7b3c6a1f8cc8ef512075a0ab285c64761772356f4eb5f82c9fb1a8cde63d8794f8aa819eda02fa0a7c44bc9955c5113f87be78
+    eslint: ">=8.52.0"
+  checksum: 7580dc96b2edd26d10c1671e575d8ed26df87405f8a535f69f718187aecd64a89402c5dca40ee4a873ed8822496445451b50d9b9a52555b74f053af00fa98c0b
   languageName: node
   linkType: hard
 
