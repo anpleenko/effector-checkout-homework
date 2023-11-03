@@ -30,7 +30,7 @@
     "@types/react-dom": "18.2.14",
     "@types/react-router-config": "5.0.9",
     "@types/react-router-dom": "5.3.3",
-    "@vitejs/plugin-react": "4.1.0",
+    "@vitejs/plugin-react": "4.1.1",
     "eslint": "8.52.0",
     "eslint-kit": "10.6.0",
     "prettier": "3.0.3",
