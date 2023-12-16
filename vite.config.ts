@@ -5,4 +5,5 @@ import { defineConfig } from 'vite';
 // eslint-disable-next-line import/no-default-export
 export default defineConfig({
   plugins: [react()],
+  base: 'effector-checkout-homework',
 });
