@@ -2104,7 +2104,7 @@ __metadata:
     react-router-config: 5.1.1
     react-router-dom: 5.3.0
     typescript: 5.3.3
-    vite: 5.1.2
+    vite: 5.1.4
   languageName: unknown
   linkType: soft
 
@@ -6096,9 +6096,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.1.2":
-  version: 5.1.2
-  resolution: "vite@npm:5.1.2"
+"vite@npm:5.1.4":
+  version: 5.1.4
+  resolution: "vite@npm:5.1.4"
   dependencies:
     esbuild: ^0.19.3
     fsevents: ~2.3.3
@@ -6132,7 +6132,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: deb606eda820912ffc5361b732bbd763bf82ac4c982f9b6ddfafd7c035067cba78adcdc34d053d5bb0ed3a191f99b17e80012b38e23e7cb9376e45ad6813fe23
+  checksum: fb8b944c69fd738b412ad10471f01db01ed59b5d7fdf182b836b420b221a8bd5ada74d225a87aaa80cf8d2b693cc4a89ab7c291254a8b4e6faefd93843ebb9d3
   languageName: node
   linkType: hard
 
