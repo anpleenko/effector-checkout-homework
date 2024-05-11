@@ -15,7 +15,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@faker-js/faker": "8.3.1",
+    "@faker-js/faker": "8.4.1",
     "effector": "22.8.7",
     "effector-react": "22.5.4",
     "history": "4.10.1",
@@ -27,15 +27,15 @@
   },
   "devDependencies": {
     "@types/react": "18.2.47",
-    "@types/react-dom": "18.2.18",
+    "@types/react-dom": "18.2.25",
     "@types/react-router-config": "5.0.11",
     "@types/react-router-dom": "5.3.3",
     "@vitejs/plugin-react": "4.2.1",
-    "eslint": "8.56.0",
-    "eslint-kit": "10.7.0",
-    "prettier": "3.1.1",
-    "typescript": "5.3.3",
-    "vite": "5.0.11"
+    "eslint": "8.57.0",
+    "eslint-kit": "10.30.0",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5",
+    "vite": "5.2.11"
   },
   "packageManager": "yarn@3.6.1"
 }
