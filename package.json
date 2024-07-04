@@ -35,7 +35,7 @@
     "eslint-kit": "10.31.0",
     "prettier": "3.2.5",
     "typescript": "5.4.5",
-    "vite": "5.2.12"
+    "vite": "5.3.3"
   },
   "packageManager": "yarn@3.6.1"
 }
