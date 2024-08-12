@@ -2292,7 +2292,7 @@ __metadata:
     effector: 23.2.2
     effector-react: 22.5.4
     eslint: 8.57.0
-    eslint-kit: 11.4.0
+    eslint-kit: 11.5.0
     history: 4.10.1
     prettier: 3.2.5
     react: 18.2.0
@@ -3063,9 +3063,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-kit@npm:11.4.0":
-  version: 11.4.0
-  resolution: "eslint-kit@npm:11.4.0"
+"eslint-kit@npm:11.5.0":
+  version: 11.5.0
+  resolution: "eslint-kit@npm:11.5.0"
   dependencies:
     "@babel/core": ^7.24.9
     "@babel/eslint-parser": ^7.24.8
@@ -3095,7 +3095,7 @@ __metadata:
   peerDependencies:
     eslint: ^8.56.0
     prettier: ^3.0.0
-  checksum: 3b4c658f31441e7cab0983b8085dba0f5e284283da4220df59b86d22c824debe7a023a6414da07af13a182089ac4db3d7fb97714529668855c97e92fd4f5f7c1
+  checksum: 11664d7ad39ef6c3ad49c9dc62938f7bbf848554a632b817a20d72f8771890f4322531a30ff697f6e1fb1fc1b156f67cc3d6312d83ef1b4f6a8bca87b1b84879
   languageName: node
   linkType: hard
 
