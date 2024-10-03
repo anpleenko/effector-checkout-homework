@@ -15,7 +15,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@faker-js/faker": "8.4.1",
+    "@faker-js/faker": "9.0.3",
     "effector": "23.2.3",
     "effector-react": "23.2.1",
     "history": "4.10.1",
