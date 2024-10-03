@@ -10,5 +10,3 @@
 ### Полезные ссылки:
 
 - https://feature-sliced.design
-- https://sova.dev/ru/effector-model-structure/
-- https://sova.dev/ru/application-structure/
