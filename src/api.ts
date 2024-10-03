@@ -14,10 +14,10 @@ export interface Product {
 }
 
 const products: Product[] = Array.from({ length: 20 }, () => ({
-  id: faker.datatype.uuid(),
+  id: faker.string.uuid(),
   title: faker.commerce.productName(),
   description: faker.commerce.productDescription(),
-  price: faker.commerce.price(1, 60, 2),
+  price: faker.commerce.price({ min: 1, max: 60, dec: 2 }),
   color: faker.color.human(),
 }));
 
