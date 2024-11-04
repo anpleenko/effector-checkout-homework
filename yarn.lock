@@ -2181,10 +2181,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@faker-js/faker@npm:9.1.0":
-  version: 9.1.0
-  resolution: "@faker-js/faker@npm:9.1.0"
-  checksum: 0cd91386e670ca64ef635146e06cacdf26fd5e2f6fde3e58e0d7b7555f9bcb69f93408e16cdbb15f688774c1454f71f001ec75dd3ea27dbe09cb56ca06107b57
+"@faker-js/faker@npm:9.2.0":
+  version: 9.2.0
+  resolution: "@faker-js/faker@npm:9.2.0"
+  checksum: 7cbff7363f198c24aa1a25499f200a25506f80df577a419ae878b6bdd4aa901ecfe071ae3bbecf8afafa5542c825623d55f5884d44db7b12420c898241332cd1
   languageName: node
   linkType: hard
 
@@ -3790,7 +3790,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "checkout@workspace:."
   dependencies:
-    "@faker-js/faker": 9.1.0
+    "@faker-js/faker": 9.2.0
     "@types/react": 18.0.25
     "@types/react-dom": 18.3.1
     "@types/react-router-config": 5.0.11
