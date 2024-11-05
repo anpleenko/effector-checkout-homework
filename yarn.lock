@@ -3799,7 +3799,7 @@ __metadata:
     effector: 23.2.3
     effector-react: 23.2.1
     eslint: 8.57.0
-    eslint-kit: 11.27.0
+    eslint-kit: 11.29.0
     history: 4.10.1
     prettier: 3.3.3
     react: 18.2.0
@@ -4608,9 +4608,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-kit@npm:11.27.0":
-  version: 11.27.0
-  resolution: "eslint-kit@npm:11.27.0"
+"eslint-kit@npm:11.29.0":
+  version: 11.29.0
+  resolution: "eslint-kit@npm:11.29.0"
   dependencies:
     "@babel/core": ^7.24.9
     "@babel/eslint-parser": ^7.24.8
@@ -4636,13 +4636,13 @@ __metadata:
     eslint-plugin-sonarjs: 2.0.4
     eslint-plugin-svelte3: ^4.0.0
     eslint-plugin-unicorn: 56.0.0
-    eslint-plugin-vue: 9.29.1
+    eslint-plugin-vue: 9.30.0
     semver: ^7.3.8
     vue-eslint-parser: 9.4.3
   peerDependencies:
     eslint: ^8.57.0
     prettier: ^3.0.0
-  checksum: 59ad5a29683c5b2628062a9b4603293f3bc14808c3e32ab4c7cd4245e9ae40d53e6716acf2c36e2f7d49c65941caa20e0739dc42ab219cc83fe25d9906a66f9f
+  checksum: d5485edcdb6fffedceb78e1b42f2a75536738b0b8c1fb554c6474c8f1c4553928c4d7b83ac58e09c9907e05105e35a42d02e8eba8801deb726a37dbde4b4bc3d
   languageName: node
   linkType: hard
 
@@ -4987,9 +4987,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:9.29.1":
-  version: 9.29.1
-  resolution: "eslint-plugin-vue@npm:9.29.1"
+"eslint-plugin-vue@npm:9.30.0":
+  version: 9.30.0
+  resolution: "eslint-plugin-vue@npm:9.30.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.4.0
     globals: ^13.24.0
@@ -5001,7 +5001,7 @@ __metadata:
     xml-name-validator: ^4.0.0
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: d0c2b496413aeb53e578be5e85485afed2ab9d3b697d4ea299d2f9747b4a3eca6984374b6677d6803cc2126fd52bbe0c2a68062deaad853aa4132ffe20181844
+  checksum: 9a541e0c772b333394fdaaa890cae7b7f56ba1bd6de480ceae624f81b91b1276a105fefa6e5e61d281709b9f6753da4d08f672ad4f5f0a70d8a95d09677724b4
   languageName: node
   linkType: hard
 
