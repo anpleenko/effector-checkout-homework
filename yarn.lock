@@ -3799,7 +3799,7 @@ __metadata:
     effector: 23.2.3
     effector-react: 23.2.1
     eslint: 8.57.0
-    eslint-kit: 11.30.0
+    eslint-kit: 11.31.0
     history: 4.10.1
     prettier: 3.3.3
     react: 18.2.0
@@ -4545,14 +4545,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-compat-utils@npm:^0.5.0":
-  version: 0.5.1
-  resolution: "eslint-compat-utils@npm:0.5.1"
+"eslint-compat-utils@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "eslint-compat-utils@npm:0.6.0"
   dependencies:
     semver: ^7.5.4
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: beccf2a5bd7c7974e3584b269f8a02667c83bca64cfd4c866f3055867f187e78b00ee826721765bdee9b13efaaa248f8068c581f7bb05803e8f47abb116e68fc
+  checksum: a3c20bd2a0b1d5a71bea1d83cae0ab17849edec9d14c6c973049e03f21f9559bcc6c7701e90cdbf498a05adf2f7a85482a9c352e5d4b4ba058cf8d9fff85efe6
   languageName: node
   linkType: hard
 
@@ -4608,9 +4608,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-kit@npm:11.30.0":
-  version: 11.30.0
-  resolution: "eslint-kit@npm:11.30.0"
+"eslint-kit@npm:11.31.0":
+  version: 11.31.0
+  resolution: "eslint-kit@npm:11.31.0"
   dependencies:
     "@babel/core": ^7.24.9
     "@babel/eslint-parser": ^7.24.8
@@ -4624,7 +4624,7 @@ __metadata:
     eslint-import-resolver-custom-alias: ^1.3.2
     eslint-import-resolver-jsconfig: ^1.1.0
     eslint-import-resolver-typescript: ^3.6.1
-    eslint-plugin-astro: 1.3.0
+    eslint-plugin-astro: 1.3.1
     eslint-plugin-effector: 0.15.0
     eslint-plugin-import-x: ^4.0.0
     eslint-plugin-jsx-a11y: 6.10.2
@@ -4642,7 +4642,7 @@ __metadata:
   peerDependencies:
     eslint: ^8.57.0
     prettier: ^3.0.0
-  checksum: 009b7787ae1c71baeace4859f0b2ddc74fa766d6f63e63ee1fd0145e05cdd97333a810217bf151d6cf242423f6639643b15a97f22da693f5baa5cb39dcff8cab
+  checksum: c59f1dd5008f4a22cd5e7445b30c42387a0cbfaeccaee87a14dd9b4264429a34fc9abe8ad8b94e5767b871b68bec6e095f0a282abbeaf76b51dacffe273a5bcb
   languageName: node
   linkType: hard
 
@@ -4670,21 +4670,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:1.3.0":
-  version: 1.3.0
-  resolution: "eslint-plugin-astro@npm:1.3.0"
+"eslint-plugin-astro@npm:1.3.1":
+  version: 1.3.1
+  resolution: "eslint-plugin-astro@npm:1.3.1"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@jridgewell/sourcemap-codec": ^1.4.14
     "@typescript-eslint/types": ^7.7.1 || ^8
     astro-eslint-parser: ^1.0.2
-    eslint-compat-utils: ^0.5.0
+    eslint-compat-utils: ^0.6.0
     globals: ^15.0.0
     postcss: ^8.4.14
-    postcss-selector-parser: ^6.0.10
+    postcss-selector-parser: ^7.0.0
   peerDependencies:
     eslint: ">=8.57.0"
-  checksum: d55b9c723e7d326895377827b5b4f517e420aee185d8539879657614573017eaf0452c53dafb240ddcd1b10b62652df6d1f4c34bf15cbc767ea21a9355594203
+  checksum: d57780259c1fcd70f4ab0e468c809b83e5a628e5c5571ae5767c57dbd4ccda771791ada88c9b59285486bb22973f09ff1fae1893b376ceee582bc84071f81171
   languageName: node
   linkType: hard
 
@@ -7267,16 +7267,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^6.0.10":
-  version: 6.1.2
-  resolution: "postcss-selector-parser@npm:6.1.2"
-  dependencies:
-    cssesc: ^3.0.0
-    util-deprecate: ^1.0.2
-  checksum: ce9440fc42a5419d103f4c7c1847cb75488f3ac9cbe81093b408ee9701193a509f664b4d10a2b4d82c694ee7495e022f8f482d254f92b7ffd9ed9dea696c6f84
-  languageName: node
-  linkType: hard
-
 "postcss-selector-parser@npm:^6.0.15":
   version: 6.0.16
   resolution: "postcss-selector-parser@npm:6.0.16"
@@ -7284,6 +7274,16 @@ __metadata:
     cssesc: ^3.0.0
     util-deprecate: ^1.0.2
   checksum: e1cd68e33a39e3dc1e1e5bd8717be5bbe3cc23a4cecb466c3acb2f3a77daad7a47df4d6137a76f8db74cf160d2fb16b2cfdb4ccbebdfda844690f8d545fe281d
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "postcss-selector-parser@npm:7.0.0"
+  dependencies:
+    cssesc: ^3.0.0
+    util-deprecate: ^1.0.2
+  checksum: f906b7449fcbe9fa6ae739b6fc324ee3c6201aaf5224f26da27de64ccba68d878d734dd182a467881e463f7ede08972d0129b0cc4d6b671d78c6492cddcef154
   languageName: node
   linkType: hard
 
