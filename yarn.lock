@@ -3820,7 +3820,7 @@ __metadata:
     effector: 23.2.3
     effector-react: 23.2.1
     eslint: 8.57.0
-    eslint-kit: 11.33.0
+    eslint-kit: 11.34.0
     history: 4.10.1
     prettier: 3.3.3
     react: 18.2.0
@@ -4629,9 +4629,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-kit@npm:11.33.0":
-  version: 11.33.0
-  resolution: "eslint-kit@npm:11.33.0"
+"eslint-kit@npm:11.34.0":
+  version: 11.34.0
+  resolution: "eslint-kit@npm:11.34.0"
   dependencies:
     "@babel/core": ^7.24.9
     "@babel/eslint-parser": ^7.24.8
@@ -4656,14 +4656,14 @@ __metadata:
     eslint-plugin-solid: 0.14.4
     eslint-plugin-sonarjs: 2.0.4
     eslint-plugin-svelte3: ^4.0.0
-    eslint-plugin-unicorn: 56.0.0
+    eslint-plugin-unicorn: 56.0.1
     eslint-plugin-vue: 9.31.0
     semver: ^7.3.8
     vue-eslint-parser: 9.4.3
   peerDependencies:
     eslint: ^8.57.0
     prettier: ^3.0.0
-  checksum: 8e094e8841c55af1030d74bb21daf1f14a446ba434fcfb2230c78cdd2cf1405f24bde5052cd56abacb6563df10f1b2498c3d39005454aaf7ae91e8e67c0710a5
+  checksum: 93c363dbb8090e75cf82c459174722c0ef4d50ae0bcf91bed9c770407e65b4ec49a4e109f58f3a1751fb1cff7dc75548244caff94846cbebd52437995728a1e2
   languageName: node
   linkType: hard
 
@@ -4982,9 +4982,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:56.0.0":
-  version: 56.0.0
-  resolution: "eslint-plugin-unicorn@npm:56.0.0"
+"eslint-plugin-unicorn@npm:56.0.1":
+  version: 56.0.1
+  resolution: "eslint-plugin-unicorn@npm:56.0.1"
   dependencies:
     "@babel/helper-validator-identifier": ^7.24.7
     "@eslint-community/eslint-utils": ^4.4.0
@@ -5004,7 +5004,7 @@ __metadata:
     strip-indent: ^3.0.0
   peerDependencies:
     eslint: ">=8.56.0"
-  checksum: 4bc05fac0b49523de08452ebf0238d2e7f7b5790c234b22b9d74035efa656f01d79f7adcff8e5b075e9813e3cae9c36ba8e1956c1b12449c64c7af9c6a36726d
+  checksum: 2c27f46beb1c2681749cc2591508c9904aa02de6147cc41fa06e602763d2dbe4a9587f13a8c1dcd870a85c6ddcdaa803d3fcce0e3551435afa28fd266365ada7
   languageName: node
   linkType: hard
 
