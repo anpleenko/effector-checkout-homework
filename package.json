@@ -32,7 +32,7 @@
     "@types/react-router-dom": "5.3.3",
     "@vitejs/plugin-react": "4.3.3",
     "eslint": "8.57.0",
-    "eslint-kit": "11.33.0",
+    "eslint-kit": "11.34.0",
     "prettier": "3.3.3",
     "typescript": "5.6.3",
     "vite": "5.4.11"
