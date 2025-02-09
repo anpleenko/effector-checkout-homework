@@ -3475,7 +3475,7 @@ __metadata:
     prettier: "npm:3.5.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.3.1"
-    react-router: "npm:5.2.1"
+    react-router: "npm:5.3.4"
     react-router-config: "npm:5.1.1"
     react-router-dom: "npm:5.3.0"
     typescript: "npm:5.7.3"
@@ -6927,6 +6927,25 @@ __metadata:
   peerDependencies:
     react: ">=15"
   checksum: 10/54c9d9ecccb97d32c460874c4bb22abbc3dcd3cc6151a1125113d662b5e22246233e567e0877138e3d35542dd6822335c177e7c80e8700a7ac72a1b26fb864bd
+  languageName: node
+  linkType: hard
+
+"react-router@npm:5.3.4":
+  version: 5.3.4
+  resolution: "react-router@npm:5.3.4"
+  dependencies:
+    "@babel/runtime": "npm:^7.12.13"
+    history: "npm:^4.9.0"
+    hoist-non-react-statics: "npm:^3.1.0"
+    loose-envify: "npm:^1.3.1"
+    path-to-regexp: "npm:^1.7.0"
+    prop-types: "npm:^15.6.2"
+    react-is: "npm:^16.6.0"
+    tiny-invariant: "npm:^1.0.2"
+    tiny-warning: "npm:^1.0.0"
+  peerDependencies:
+    react: ">=15"
+  checksum: 10/99d54a99af6bc6d7cad2e5ea7eee9485b62a8b8e16a1182b18daa7fad7dafa5e526850eaeebff629848b297ae055a9cb5b4aba8760e81af8b903efc049d48f5c
   languageName: node
   linkType: hard
 
