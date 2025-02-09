@@ -11,25 +11,7 @@ updates:
     schedule:
       interval: 'daily'
     ignore:
-      - dependency-name: 'history'
-        update-types: ['version-update:semver-major']
-      - dependency-name: 'react-router'
-        update-types: ['version-update:semver-major']
-      - dependency-name: 'react-router-dom'
-        update-types: ['version-update:semver-major']
-      - dependency-name: 'react'
-        update-types: ['version-update:semver-major']
-      - dependency-name: 'react-dom'
-        update-types: ['version-update:semver-major']
-      - dependency-name: 'react-router-dom'
-        update-types: ['version-update:semver-major']
-      - dependency-name: 'react-router-config'
-        update-types: ['version-update:semver-major']
-      - dependency-name: '@types/react'
-        update-types: ['version-update:semver-major']
-      - dependency-name: '@types/react-dom'
-        update-types: ['version-update:semver-major']
-      - dependency-name: '@types/react-router-config'
+      - dependency-name: '*'
         update-types: ['version-update:semver-major']
     labels:
       - 'dependencies'
