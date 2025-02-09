@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "4.3.4",
     "eslint": "8.57.0",
     "eslint-kit": "11.38.0",
-    "prettier": "3.4.2",
+    "prettier": "3.5.0",
     "typescript": "5.7.3",
     "vite": "6.1.0"
   },
