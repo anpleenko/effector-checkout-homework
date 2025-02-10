@@ -13,5 +13,7 @@ updates:
     ignore:
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
+      - dependency-name: 'react-router'
+      - dependency-name: 'react-router-dom'
     labels:
       - 'dependencies'
