@@ -32,6 +32,6 @@ module.exports = configure({
     presets.typescript(),
     presets.prettier(),
     presets.node(),
-    presets.react({ version: '18.0', newJSXTransform: true }),
+    presets.react({ version: '17.0', newJSXTransform: true }),
   ],
 });
