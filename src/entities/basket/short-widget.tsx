@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore } from 'effector-react';
 
-import { $currentBasket } from './model';
+import { $basket } from './model';
 
-const $countProducts = $currentBasket.map((list) => list.length);
+const $countProducts = $basket.map((list) => list.length);
 
 export const BasketShortWidget: FC = () => {
   const count = useStore($countProducts);

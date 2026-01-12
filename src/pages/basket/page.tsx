@@ -2,14 +2,14 @@ import { FC, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useList, useStore } from 'effector-react';
 
-import { ProductView } from '../../entities/product';
+import { BasketProductView } from '../../entities/product';
 
 import { $isEmpty, $products, $productsCount, $submitDisabled, $totalPrice, pageMounted, submitClicked } from './model';
 
 export const BasketPage: FC = () => {
   useEffect(() => pageMounted(), []);
 
-  const products = useList($products, (product) => <ProductView product={product} />);
+  const products = useList($products, (product) => <BasketProductView product={product} />);
 
   return (
     <section>
