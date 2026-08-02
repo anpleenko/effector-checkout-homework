@@ -2,7 +2,7 @@ import { FC, useEffect } from 'react';
 import { useStore } from 'effector-react';
 
 import { BasketShortWidget } from '../../entities/basket';
-import { ProductView } from '../../entities/product';
+import { BasketProductView } from '../../entities/product';
 
 import * as model from './model';
 
@@ -33,7 +33,7 @@ const Products: FC = () => {
     <ul>
       {products.map((product) => (
         <li key={product.id}>
-          <ProductView product={product} />
+          <BasketProductView product={product} />
         </li>
       ))}
     </ul>

@@ -11,6 +11,12 @@ export const ProductView: FC<{ product: Product }> = ({ product }) => (
       <small>$</small>
       <b>{product.price}</b>
     </p>
+  </>
+);
+
+export const BasketProductView: FC<{ product: Product }> = ({ product }) => (
+  <>
+    <ProductView product={product} />
     <AddProductButton product={product} />
   </>
 );

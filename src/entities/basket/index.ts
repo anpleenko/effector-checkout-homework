@@ -1,3 +1,3 @@
 export { AddProductButton } from './add-product';
-export { $currentBasket } from './model';
+export { $basket } from './model';
 export { BasketShortWidget } from './short-widget';
